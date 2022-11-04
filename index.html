@@ -17,6 +17,10 @@
 <body>
     <!--GENERAL TABLE-->
     <fieldset style="width:100px; padding: 15px 15px; background:rgb(179, 179, 179);">
+        
+        
+        
+      <form action="#" method="post" name="frmDatos" id="frmDatos">
         <!--TABLE 1-->
         <fieldset style="width:100px; border-radius:40px; padding: 15px 310px; height:120%;background-color: white;">
             <legend style="text-align:center;">
@@ -29,7 +33,7 @@
                         <!--Cabecera 1-->
                         <th rowspan="4">
                             <div class="tittle">SOLICITUD DE EMPLEO</div>
-                            <textarea name="TipoTrabajo" class="TipoTrabajo" cols="25" rows="9 ">
+                            <textarea name="TipoTrabajo" class="TipoTrabajo" cols="25" rows="9 " required>
 
                         </textarea>
                         </th>
@@ -73,24 +77,24 @@
                     <tr style="background-color: rgb(179, 179, 179); border-radius: 10px;">
                         <!--Cabecera 1-->
                         <td><strong>Apellido paterno:</strong>
-                            <input type="text" class="text-input" />
+                            <input type="text" class="text-input" required/>
                         </td>
                         <!--Cabecera 2-->
                         <td><strong>Apellido materno:</strong>
-                            <input type="text" class="text-input" />
+                            <input type="text" class="text-input" required/>
                         </td>
                         <!--Cabecera 3-->
                         <td><strong>Nombre(s):</strong>
-                            <input type="text" class="text-input" />
+                            <input type="text" class="text-input" required/>
                         </td>
                         <!--Cabecera 4-->
                         <td><strong>Edad:</strong>
-                            <input type="number" class="text-input" />
+                            <input type="number" class="text-input" required/>
                         </td>
                         <td rowspan="4">
 
                             <strong>Telefono:</strong>
-                            <input type="number" class="text-input" />
+                            <input type="number" class="text-input" required/>
                             <hr style="color:aliceblue;">
 
                             <strong>Sexo:</strong>
@@ -137,10 +141,10 @@
                         <td colspan="2" class="vive-with">
                             <strong>Vive con:</strong>
                             <nav class="back-viv">
-                                <input type="radio" name="opvive" value="padres">Padres
-                                <input type="radio" name="opvive" value="fam">Familia
-                                <input type="radio" name="opvive" value="par">Parientes
-                                <input type="radio" name="opvive" value="solo">Solo
+                                <input type="radio" name="opvive" id="opvive">Padres
+                                <input type="radio" name="opvive" id="opvive">Familia
+                                <input type="radio" name="opvive" id="opvive">Parientes
+                                <input type="radio" name="opvive" id="opvive">Solo
                             </nav>
                         </td>
                         </td>
@@ -148,10 +152,10 @@
                         <td colspan="2">
                             <strong>Dependen de usted:</strong>
                             <nav class="back-viv2">
-                                <input type="radio" name="opvive" value="hijos">Hijos
-                                <input type="radio" name="opvive" value="Conyuge">Cónyuge
-                                <input type="radio" name="opvive" value="Pad">Padres
-                                <input type="radio" name="opvive" value="others">Otros
+                                <input type="radio" name="opdepende" id="opdepende">Hijos
+                                <input type="radio" name="opdepende" id="opdepende">Cónyuge
+                                <input type="radio" name="opdepende" id="opdepende">Padres
+                                <input type="radio" name="opdepende" id="opdepende">Otros
                             </nav>
                         </td>
                         </td>
@@ -172,11 +176,11 @@
                     <tr style="background-color: rgb(179, 179, 179); border-radius: 10px;background-color: white;">
                         <!--Cabecera 1-->
                         <td colspan="3"><strong>Clave Unica de Registro de Población</strong>
-                            <input type="text" class="text-input" />
+                            <input type="text" class="text-input" required/>
                         </td>
                         <td colspan="2">
                             <strong>AFORE:</strong>
-                            <input type="text" class="text-input" />
+                            <input type="text" class="text-input" required/>
                         </td>
                     </tr>
 
@@ -185,19 +189,19 @@
                     <tr style="background-color: rgb(179, 179, 179); border-radius: 10px;">
                         <!--Cabecera 1-->
                         <td><strong>Reg.Fed. De Contribuyentes:</strong>
-                            <input type="text" class="text-input" />
+                            <input type="text" class="text-input" requiered/>
                         </td>
                         <!--Cabecera 2-->
                         <td><strong>Numero de Seguridad Social:</strong>
-                            <input type="number" class="text-input" />
+                            <input type="number" class="text-input" requiered/>
                         </td>
                         <!--Cabecera 3-->
                         <td><strong>Cartilla de Servicio Militar No.</strong>
-                            <input type="number" class="text-input" />
+                            <input type="number" class="text-input" requiered/>
                         </td>
                         <!--Cabecera 4-->
                         <td><strong>Pasaporte No:</strong>
-                            <input type="number" class="text-input" />
+                            <input type="number" class="text-input" requiered/>
                         </td>
                     </tr>
 
@@ -206,15 +210,15 @@
                         <td colspan="2" class="vive-with">
                             <strong>Tiene licencia de manejo:</strong>
                             <nav class="back-viv">
-                                <input type="radio" name="opvive" value="yes">Si
-                                <input type="radio" name="opvive" value="no">No
+                                <input type="radio" name="opManeja" id="opManeja">Si
+                                <input type="radio" name="opManeja" id="opManeja">No
                             </nav>
                         </td>
                         </td>
 
                         <td colspan="2">
                             <strong>Clase y numero de licencia</strong>
-                            <input type="text" name="clas-lice" class="text-input">
+                            <input type="text" name="clas-lice" class="text-input" required>
                         </td>
                         </td>
 
@@ -237,9 +241,9 @@
                         <td colspan="2" class="vive-with">
                             <strong>¿Como considera su estado de salud actual?</strong>
                             <nav class="back-viv">
-                                <input type="radio" name="op-salud" value="Buen">Bueno
-                                <input type="radio" name="op-salud" value="Reg">Regular
-                                <input type="radio" name="op-salud" value="Mal">Malo
+                                <input type="radio" name="op-salud" id="op-salud" required>Bueno
+                                <input type="radio" name="op-salud" id="op-salud" required>Regular
+                                <input type="radio" name="op-salud" id="op-salud" required>Malo
                             </nav>
                         </td>
                         </td>
@@ -247,8 +251,8 @@
                         <td colspan="2">
                             <strong>¿Padece alguna enfermedad crónica?</strong>
                             <nav class="back-viv2">
-                                <input type="radio" name="openfermedad" value="Not">No
-                                <input type="radio" name="openfermedad" value="Yess">Si, Explique:
+                                <input type="radio" name="openfermedad" id="openfermedad" requiered>No
+                                <input type="radio" name="openfermedad" id="openfermedad" requiered>Si, Explique:
                                 <input type="text" name="openfermedad" style="border-radius: 5px;">
                             </nav>
                         </td>
@@ -257,15 +261,21 @@
                     <tr style="background-color: rgb(179, 179, 179); border-radius: 10px;">
                         <!--Cabecera 1-->
                         <td><strong>¿Práctica Ud. Algún Deporte?</strong>
-                            <input type="text" class="text-input" />
+                            <br>
+                            <input type="radio" name="opDeporte" id="opDeporte" requiered>No
+                            <input type="radio" name="opDeporte" id="opDeporte" requiered>Si, Explique:
+                            <input type="text" name="opDeporte" style="border-radius: 5px;">
                         </td>
                         <!--Cabecera 2-->
                         <td><strong>¿Permanece a algún Club Social o Deportivo?</strong>
-                            <input type="text" class="text-input" />
+                            <br>
+                            <input type="radio" name="opClub" id="opClub" requiered>No
+                            <input type="radio" name="opClub" id="opClub" requiered>Si, Explique:
+                            <input type="text" name="opClub" style="border-radius: 5px;">
                         </td>
                         <!--Cabecera 3-->
                         <td><strong>¿Cuál es su pasatiempo favorito?</strong>
-                            <input type="text" class="text-input" />
+                            <textarea name="pasatiempo" id="pasatiempo" cols="25" rows="4"></textarea>
                         </td>
                     </tr>
 
@@ -274,7 +284,7 @@
                         <td rowspan="4" colspan="4" class="vive-with">
                             <strong>¿Cuál es su meta en la vida?</strong>
 
-                            <textarea name="metalife" cols="40" rows="2" class="textarea"> </textarea>
+                            <textarea name="metalife" cols="40" rows="2" class="textarea" required> </textarea>
                         </td>
 
 
@@ -312,19 +322,19 @@
                     <tr style="background-color: rgb(179, 179, 179); border-radius: 10px;">
                         <!--Cabecera 1-->
                         <td><strong>PADRE</strong>
-                            <input type="text" class="text-input" />
+                            <input type="text" class="text-input" required/>
                         </td>
                         <td>
-                            <input type="text" class="text-input" />
+                            <input type="text" class="text-input" required/>
                         </td>
                         <td>
-                            <input type="text" class="text-input" />
+                            <input type="text" class="text-input" required/>
                         </td>
                         <td>
-                            <input type="text" class="text-input" />
+                            <input type="text" class="text-input" required/>
                         </td>
                         <td>
-                            <input type="text" class="text-input" />
+                            <input type="text" class="text-input" required/>
                         </td>
                     </tr>
 
@@ -332,19 +342,19 @@
                     <tr style="background-color: rgb(179, 179, 179); border-radius: 10px;">
                         <!--Cabecera 1-->
                         <td><strong>MADRE</strong>
-                            <input type="text" class="text-input" />
+                            <input type="text" class="text-input" required/>
                         </td>
                         <td>
-                            <input type="text" class="text-input" />
+                            <input type="text" class="text-input" required/>
                         </td>
                         <td>
-                            <input type="text" class="text-input" />
+                            <input type="text" class="text-input" required/>
                         </td>
                         <td>
-                            <input type="text" class="text-input" />
+                            <input type="text" class="text-input" required/>
                         </td>
                         <td>
-                            <input type="text" class="text-input" />
+                            <input type="text" class="text-input" required/>
                         </td>
                     </tr>
 
@@ -647,7 +657,8 @@
                     <!--FILA 3-->
                     <tr style="background-color: rgb(179, 179, 179); border-radius: 10px;">
                         <td>
-                            <strong>Nombre de la compañia</strong>
+                            
+                
                         </td>
                         <td>
                             <input type="text" class="text-input">
@@ -861,7 +872,7 @@
                     <!--FILA 2-->
                     <tr style="background-color: rgb(179, 179, 179); border-radius: 10px;">
                         <td>
-                            <input type="text" class="text-input">
+                            <input type="text" class="text-input"> 
                         </td>
                         <td>
                             <input type="text" class="text-input">
@@ -944,16 +955,16 @@
                         <td colspan="2">
                             <strong>¿Como supo de este empleo?</strong>
                             <nav class="back-viv2">
-                                <input type="radio" name="op-empleo" value="Anuncio">Anuncio
-                                <input type="radio" name="op-empleo" value="Otro">Otro
+                                <input type="radio" name="op-empleo" id="op-empleo">Anuncio
+                                <input type="radio" name="op-empleo" id="op-empleo">Otro
                                 <textarea name="askfirstquestion" cols="50" rows="2"></textarea>
                             </nav>
                         </td>
                         <td colspan="2">
                             <strong>Tiene ingresos? (describalos)</strong>
                             <nav class="back-viv2">
-                                <input type="radio" name="op-empleo" value="yeah">Si
-                                <input type="radio" name="op-empleo" value="Not">No
+                                <input type="radio" name="op-empleo1" id="op-empleo1">Si
+                                <input type="radio" name="op-empleo1" id="op-empleo1">No
                                 <textarea name="askfirstquestion" cols="50" rows="2"></textarea>
                             </nav>
                         </td>
@@ -964,16 +975,16 @@
                         <td colspan="2">
                             <strong>¿Tiene parientes trabajando en esta Empresa?</strong>
                             <nav class="back-viv2">
-                                <input type="radio" name="op-empleo" value="yeah">Si
-                                <input type="radio" name="op-empleo" value="Not">No
+                                <input type="radio" name="op-empleo2" id="op-empleo2">Si
+                                <input type="radio" name="op-empleo2" id="op-empleo2">No
                                 <textarea name="askfirstquestion" cols="50" rows="2"></textarea>
                             </nav>
                         </td>
                         <td colspan="2">
                             <strong>¿Su cónyuge trabaja? (donde)</strong>
                             <nav class="back-viv2">
-                                <input type="radio" name="op-empleo" value="yeah">Si
-                                <input type="radio" name="op-empleo" value="Not">No
+                                <input type="radio" name="op-empleo3" id="op-empleo3">Si
+                                <input type="radio" name="op-empleo3" id="op-empleo3">No
                                 <textarea name="askfirstquestion" cols="50" rows="2"></textarea>
                             </nav>
                         </td>
@@ -984,16 +995,16 @@
                         <td colspan="2">
                             <strong>¿Ha estado afianzado?</strong>
                             <nav class="back-viv2">
-                                <input type="radio" name="op-empleo" value="yeah">Si
-                                <input type="radio" name="op-empleo" value="Not">No
+                                <input type="radio" name="op-empleo4" id="op-empleo4">Si
+                                <input type="radio" name="op-empleo4" id="op-empleo4">No
                                 <textarea name="askfirstquestion" cols="50" rows="2"></textarea>
                             </nav>
                         </td>
                         <td colspan="2">
                             <strong>¿Vive en casa propia?</strong>
                             <nav class="back-viv2">
-                                <input type="radio" name="op-empleo" value="yeah">Si
-                                <input type="radio" name="op-empleo" value="Not">No
+                                <input type="radio" name="op-empleo5" id="op-empleo5">Si
+                                <input type="radio" name="op-empleo5" id="op-empleo5">No
                                 <textarea name="askfirstquestion" cols="50" rows="2"></textarea>
                             </nav>
                         </td>
@@ -1004,16 +1015,16 @@
                         <td colspan="2">
                             <strong>¿Ha estado afiliado a algún sindicato? (Cúal?)</strong>
                             <nav class="back-viv2">
-                                <input type="radio" name="op-empleo" value="yeah">Si
-                                <input type="radio" name="op-empleo" value="Not">No
+                                <input type="radio" name="op-empleo6" id="op-empleo6">Si
+                                <input type="radio" name="op-empleo6" id="op-empleo6">No
                                 <textarea name="askfirstquestion" cols="50" rows="2"></textarea>
                             </nav>
                         </td>
                         <td colspan="2">
                             <strong>¿Paga renta? (Cuánto?)</strong>
                             <nav class="back-viv2">
-                                <input type="radio" name="op-empleo" value="yeah">Si
-                                <input type="radio" name="op-empleo" value="Not">No
+                                <input type="radio" name="op-empleo7" id="op-empleo7">Si
+                                <input type="radio" name="op-empleo7" id="op-empleo7">No
                                 <textarea name="askfirstquestion" cols="50" rows="2"></textarea>
                             </nav>
                         </td>
@@ -1025,16 +1036,16 @@
                         <td colspan="2">
                             <strong>¿Tiene seguro de vida? (Nombra la Cía)</strong>
                             <nav class="back-viv2">
-                                <input type="radio" name="op-empleo" value="yeah">Si
-                                <input type="radio" name="op-empleo" value="Not">No
+                                <input type="radio" name="op-empleo8" id="op-empleo8">Si
+                                <input type="radio" name="op-empleo8" id="op-empleo8">No
                                 <textarea name="askfirstquestion" cols="50" rows="2"></textarea>
                             </nav>
                         </td>
                         <td colspan="2">
                             <strong>¿Tiene automóvil propio?</strong>
                             <nav class="back-viv2">
-                                <input type="radio" name="op-empleo" value="yeah">Si
-                                <input type="radio" name="op-empleo" value="Not">No
+                                <input type="radio" name="op-empleo9" id="op-empleo9">Si
+                                <input type="radio" name="op-empleo9" id="op-empleo9">No
                                 <textarea name="askfirstquestion" cols="50" rows="2"></textarea>
                             </nav>
                         </td>
@@ -1045,16 +1056,16 @@
                         <td colspan="2">
                             <strong>Puedes viajar? (razones)</strong>
                             <nav class="back-viv2">
-                                <input type="radio" name="op-empleo" value="yeah">Si
-                                <input type="radio" name="op-empleo" value="Not">No
+                                <input type="radio" name="op-empleo10" id="op-empleo10">Si
+                                <input type="radio" name="op-empleo10" id="op-empleo10">No
                                 <textarea name="askfirstquestion" cols="50" rows="2"></textarea>
                             </nav>
                         </td>
                         <td colspan="2">
                             <strong>¿Tiene automóvil propio?</strong>
                             <nav class="back-viv2">
-                                <input type="radio" name="op-empleo" value="yeah">Si
-                                <input type="radio" name="op-empleo" value="Not">No
+                                <input type="radio" name="op-empleo11" id="op-empleo11">Si
+                                <input type="radio" name="op-empleo11" id="op-empleo11">No
                                 <textarea name="askfirstquestion" cols="50" rows="2"></textarea>
                             </nav>
                         </td>
@@ -1066,16 +1077,16 @@
                         <td colspan="2">
                             <strong>Tiene deudas? (con quien?)</strong>
                             <nav class="back-viv2">
-                                <input type="radio" name="op-empleo" value="yeah">Si
-                                <input type="radio" name="op-empleo" value="Not">No
+                                <input type="radio" name="op-empleo12" id="op-empleo12">Si
+                                <input type="radio" name="op-empleo12" id="op-empleo12">No
                                 <textarea name="askfirstquestion" cols="50" rows="2"></textarea>
                             </nav>
                         </td>
                         <td colspan="2">
                             <strong>¿Esta dispuesto a cambia de lugar de residencia? (razones)</strong>
                             <nav class="back-viv2">
-                                <input type="radio" name="op-empleo" value="yeah">Si
-                                <input type="radio" name="op-empleo" value="Not">No
+                                <input type="radio" name="op-empleo13" id="op-empleo13">Si
+                                <input type="radio" name="op-empleo13" id="op-empleo13"No
                                 <textarea name="askfirstquestion" cols="50" rows="2"></textarea>
                             </nav>
                         </td>
@@ -1132,13 +1143,26 @@
                         <td>
                             <textarea name="summary" cols="25" rows="4"></textarea>
                         </td>
+                        
                     </tr>
+                    <!--FILA 3-->
+                  
+                    
 
                 </tbody>
+                  
             </table>
+
+               
+        
         </fieldset>
 
-
+        <center>
+        <input type="submit" value="Enviar" style="width: 100px; height: 30px; border-radius: 10px; background-color: rgb(255, 255, 255);  margin-top: 20px;">
+        <input type="reset" value="Borrar" style="width: 100px; height: 30px; border-radius: 10px; background-color: rgb(255, 255, 255); margin-left: 30px; margin-top: 20px;">
+    
+        </center>
+      </form>
 
     </fieldset>
 </body>
